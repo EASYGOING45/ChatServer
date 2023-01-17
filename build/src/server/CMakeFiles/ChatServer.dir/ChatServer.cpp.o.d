@@ -222,4 +222,39 @@ src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o: \
  /usr/include/muduo/net/EventLoop.h \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/atomic \
  /usr/include/muduo/base/Mutex.h /usr/include/muduo/base/CurrentThread.h \
- /usr/include/muduo/net/TimerId.h
+ /usr/include/muduo/net/TimerId.h \
+ /home/huan/projects/ChatServer/thirdparty/json.hpp \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cassert \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ciso646 \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/numeric \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_numeric.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/forward_list \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/forward_list.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/forward_list.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/unordered_map \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/hashtable_policy.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/unordered_map.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/valarray \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/cmath /usr/include/math.h \
+ /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
+ /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
+ /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
+ /usr/include/bits/mathcalls.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/valarray_array.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/valarray_array.tcc \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/valarray_before.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/slice_array.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/valarray_after.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/gslice.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/gslice_array.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/mask_array.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/indirect_array.h \
+ /home/huan/projects/ChatServer/include/server/ChatService.hpp \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/chrono \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
+ /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream

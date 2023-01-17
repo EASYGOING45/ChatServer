@@ -10,7 +10,7 @@ using namespace std;
 using namespace muduo;
 using namespace muduo::net;
 
-#include "../json.hpp"
+#include "json.hpp"
 using json = nlohmann::json;
 
 // 处理消息的事件回调方法类型
@@ -27,6 +27,9 @@ public:
 
     // 注册业务
     void reg(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
+    // 获取消息对应的处理器
+    MsgHandler getHandler(int msgid);
 
 private:
     ChatService(); // 构造函数 放在私有中

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/home/huan/projects/ChatServer/bin/ChatServer.pdb"
   "CMakeFiles/ChatServer.dir/ChatServer.cpp.o"
   "CMakeFiles/ChatServer.dir/ChatServer.cpp.o.d"
+  "CMakeFiles/ChatServer.dir/ChatService.cpp.o"
+  "CMakeFiles/ChatServer.dir/ChatService.cpp.o.d"
   "CMakeFiles/ChatServer.dir/main.cpp.o"
   "CMakeFiles/ChatServer.dir/main.cpp.o.d"
 )
