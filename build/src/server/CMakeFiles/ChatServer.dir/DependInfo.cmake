@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/huan/projects/ChatServer/src/server/ChatServer.cpp" "src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o.d"
   "/home/huan/projects/ChatServer/src/server/ChatService.cpp" "src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o.d"
+  "/home/huan/projects/ChatServer/src/server/db/db.cpp" "src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o.d"
   "/home/huan/projects/ChatServer/src/server/main.cpp" "src/server/CMakeFiles/ChatServer.dir/main.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/main.cpp.o.d"
   )
 

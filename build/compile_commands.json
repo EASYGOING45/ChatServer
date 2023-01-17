@@ -1,17 +1,22 @@
 [
 {
   "directory": "/home/huan/projects/ChatServer/build/src/server",
-  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/ChatServer.cpp.o -c /home/huan/projects/ChatServer/src/server/ChatServer.cpp",
+  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/include/server/db -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/ChatServer.cpp.o -c /home/huan/projects/ChatServer/src/server/ChatServer.cpp",
   "file": "/home/huan/projects/ChatServer/src/server/ChatServer.cpp"
 },
 {
   "directory": "/home/huan/projects/ChatServer/build/src/server",
-  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/ChatService.cpp.o -c /home/huan/projects/ChatServer/src/server/ChatService.cpp",
+  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/include/server/db -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/ChatService.cpp.o -c /home/huan/projects/ChatServer/src/server/ChatService.cpp",
   "file": "/home/huan/projects/ChatServer/src/server/ChatService.cpp"
 },
 {
   "directory": "/home/huan/projects/ChatServer/build/src/server",
-  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/huan/projects/ChatServer/src/server/main.cpp",
+  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/include/server/db -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/main.cpp.o -c /home/huan/projects/ChatServer/src/server/main.cpp",
   "file": "/home/huan/projects/ChatServer/src/server/main.cpp"
+},
+{
+  "directory": "/home/huan/projects/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/include/server/db -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/db/db.cpp.o -c /home/huan/projects/ChatServer/src/server/db/db.cpp",
+  "file": "/home/huan/projects/ChatServer/src/server/db/db.cpp"
 }
 ]

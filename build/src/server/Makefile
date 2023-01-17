@@ -178,6 +178,30 @@ ChatService.cpp.s:
 	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.s
 .PHONY : ChatService.cpp.s
 
+db/db.o: db/db.cpp.o
+.PHONY : db/db.o
+
+# target to build an object file
+db/db.cpp.o:
+	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o
+.PHONY : db/db.cpp.o
+
+db/db.i: db/db.cpp.i
+.PHONY : db/db.i
+
+# target to preprocess a source file
+db/db.cpp.i:
+	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/db.cpp.i
+.PHONY : db/db.cpp.i
+
+db/db.s: db/db.cpp.s
+.PHONY : db/db.s
+
+# target to generate assembly for a file
+db/db.cpp.s:
+	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/db/db.cpp.s
+.PHONY : db/db.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -217,6 +241,9 @@ help:
 	@echo "... ChatService.o"
 	@echo "... ChatService.i"
 	@echo "... ChatService.s"
+	@echo "... db/db.o"
+	@echo "... db/db.i"
+	@echo "... db/db.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

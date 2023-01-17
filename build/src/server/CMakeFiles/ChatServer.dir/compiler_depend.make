@@ -297,6 +297,13 @@ src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o: /home/huan/projects/ChatS
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/gslice_array.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/mask_array.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/indirect_array.h \
+  /home/huan/projects/ChatServer/include/server/ChatService.hpp \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/chrono \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/ratio \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/parse_numbers.h \
+  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream
 
 src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: /home/huan/projects/ChatServer/src/server/ChatService.cpp \
@@ -598,6 +605,9 @@ src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: /home/huan/projects/Chat
   /usr/include/muduo/base/Logging.h \
   /usr/include/muduo/base/LogStream.h
 
+src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o: /home/huan/projects/ChatServer/src/server/db/db.cpp \
+  /usr/include/stdc-predef.h
+
 src/server/CMakeFiles/ChatServer.dir/main.cpp.o: /home/huan/projects/ChatServer/src/server/main.cpp \
   /usr/include/stdc-predef.h \
   /home/huan/projects/ChatServer/include/server/ChatServer.hpp \
@@ -868,6 +878,8 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.o: /home/huan/projects/ChatServer/
 
 /usr/include/muduo/base/Logging.h:
 
+/opt/rh/devtoolset-7/root/usr/include/c++/7/iostream:
+
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/ctime:
@@ -877,8 +889,6 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.o: /home/huan/projects/ChatServer/
 /opt/rh/devtoolset-7/root/usr/include/c++/7/mutex:
 
 /home/huan/projects/ChatServer/include/server/ChatService.hpp:
-
-/opt/rh/devtoolset-7/root/usr/include/c++/7/iostream:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/indirect_array.h:
 
@@ -1253,6 +1263,8 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.o: /home/huan/projects/ChatServer/
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/range_access.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/stl_iterator_base_funcs.h:
+
+/home/huan/projects/ChatServer/src/server/db/db.cpp:
 
 /home/huan/projects/ChatServer/include/server/ChatServer.hpp:
 
