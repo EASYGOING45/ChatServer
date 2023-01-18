@@ -11,6 +11,7 @@ using namespace muduo;
 using namespace muduo::net;
 
 #include "json.hpp"
+#include "usermodel.hpp"
 using json = nlohmann::json;
 
 // 处理消息的事件回调方法类型
@@ -33,6 +34,9 @@ public:
 
 private:
     ChatService(); // 构造函数 放在私有中
+
+    // 数据操作类对象
+    UserModel _userModel;
 
     // 存储消息id和其对应的业务处理方法
     unordered_map<int, MsgHandler> _msgHandlerMap;
