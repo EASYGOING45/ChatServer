@@ -44,6 +44,39 @@ MsgHandler ChatService::getHandler(int msgid)
 void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp time)
 {
     LOG_INFO << "User Doing Login Service!";
+    int id = js["id"].get<int>();
+    string pwd = js["password"];
+    User user = _userModel.query(id); // 查询
+    if (user.getId() == id && user.getPwd() == pwd)
+    {
+        if (user.getState() == "online")
+        {
+            // 该用户已经登录 不允许重复登录
+            json response;
+            response["msgid"] = LOGIN_MSG_ACK;
+            response["errno"] = 2;
+            response["errmsg"] = "This Account is already login,please try again!";
+            conn->send(response.dump());
+        }
+        else
+        {
+            // 登录成功，记录用户连接信息
+            //  {
+            //      //加锁 保证线程安全
+            //  }
+
+            // 登录成功 更新用户状态信息 state offline=>online
+            user.setState("online");
+            _userModel.updateState(user);
+
+            json response;
+            response["msgid"] = LOGIN_MSG_ACK;
+            response["errno"] = 0;
+            response["id"] = user.getId();
+            response["name"] = user.getName();
+            conn->send(response.dump());
+        }
+    }
 }
 
 // 注册业务 name pwd
