@@ -61,9 +61,11 @@ void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp time)
         else
         {
             // 登录成功，记录用户连接信息
-            //  {
-            //      //加锁 保证线程安全
-            //  }
+            {
+                // 加锁 保证线程安全
+                lock_guard<mutex> lock(_connMutex);
+                _userConnMap.insert({id, conn});
+            }
 
             // 登录成功 更新用户状态信息 state offline=>online
             user.setState("online");
