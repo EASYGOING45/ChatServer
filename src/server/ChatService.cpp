@@ -113,3 +113,32 @@ void ChatService::reg(const TcpConnectionPtr &conn, json &js, Timestamp time)
         conn->send(response.dump());
     }
 }
+
+// 处理客户端异常退出
+void ChatService::clientCloseException(const TcpConnectionPtr &conn)
+{
+    User user;
+    {
+        // 线程安全
+        lock_guard<mutex> lock(_connMutex);
+        for (auto it = _userConnMap.begin(); it != _userConnMap.end(); ++it)
+        {
+            if (it->second == conn)
+            {
+                // 从map表中删除用户的链接信息
+                user.setId(it->first);
+                _userConnMap.erase(it); // 擦除
+                break;
+            }
+        }
+    }
+
+    // 用户注销 相当于下线 需要取消订阅和setState
+
+    // 更新用户的状态信息
+    if (user.getId() != -1)
+    {
+        user.setState("offline");
+        _userModel.updateState(user);
+    }
+}
