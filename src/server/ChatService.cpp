@@ -79,6 +79,15 @@ void ChatService::login(const TcpConnectionPtr &conn, json &js, Timestamp time)
             conn->send(response.dump());
         }
     }
+    else
+    {
+        LOG_INFO << "User ID not exist or incorrect password!";
+        json response;
+        response["msgid"] = LOGIN_MSG_ACK;
+        response["errno"] = 3;
+        response["errmsg"] = "User ID not exist or incorrect password!";
+        conn->send(response.dump());
+    }
 }
 
 // 注册业务 name pwd
