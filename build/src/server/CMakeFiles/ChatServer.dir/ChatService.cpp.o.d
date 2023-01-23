@@ -254,5 +254,6 @@ src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/indirect_array.h \
  /home/huan/projects/ChatServer/include/server/model/usermodel.hpp \
  /home/huan/projects/ChatServer/include/server/model/user.hpp \
+ /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
  /home/huan/projects/ChatServer/include/public.hpp \
  /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h

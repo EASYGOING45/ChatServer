@@ -259,4 +259,5 @@ src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o: \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
  /home/huan/projects/ChatServer/include/server/model/usermodel.hpp \
  /home/huan/projects/ChatServer/include/server/model/user.hpp \
+ /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream
