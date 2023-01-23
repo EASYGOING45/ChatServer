@@ -18,6 +18,7 @@ ChatService::ChatService()
     // 用户基本业务管理相关事件处理回调注册
     _msgHandlerMap.insert({LOGIN_MSG, std::bind(&ChatService::login, this, _1, _2, _3)});
     _msgHandlerMap.insert({REG_MSG, std::bind(&ChatService::reg, this, _1, _2, _3)});
+    _msgHandlerMap.insert({ONE_CHAT_MSG, std::bind(&ChatService::oneChat, this, _1, _2, _3)});
 }
 
 // 获取消息对应的处理器
@@ -121,6 +122,24 @@ void ChatService::reg(const TcpConnectionPtr &conn, json &js, Timestamp time)
         response["errno"] = 1;
         conn->send(response.dump());
     }
+}
+
+// 一对一聊天业务
+void ChatService::oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time)
+{
+    int toid = js["toid"].get<int>(); // 获取目的id
+    {
+        // 线程安全
+        lock_guard<mutex> lock(_connMutex);
+        auto it = _userConnMap.find(toid); // 寻找toid是否存在对应用户
+        if (it != _userConnMap.end())
+        {
+            // 说明存在对应用户 且其在线 服务器推送消息给对应用户
+            it->second->send(js.dump());
+            return;
+        }
+    }
+    // toid不在线则存储离线消息
 }
 
 // 处理客户端异常退出
