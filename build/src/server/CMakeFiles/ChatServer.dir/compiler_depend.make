@@ -306,6 +306,7 @@ src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o: /home/huan/projects/ChatS
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/std_mutex.h \
   /home/huan/projects/ChatServer/include/server/model/usermodel.hpp \
   /home/huan/projects/ChatServer/include/server/model/user.hpp \
+  /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
   /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream
 
 src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: /home/huan/projects/ChatServer/src/server/ChatService.cpp \
@@ -605,6 +606,7 @@ src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: /home/huan/projects/Chat
   /opt/rh/devtoolset-7/root/usr/include/c++/7/bits/indirect_array.h \
   /home/huan/projects/ChatServer/include/server/model/usermodel.hpp \
   /home/huan/projects/ChatServer/include/server/model/user.hpp \
+  /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
   /home/huan/projects/ChatServer/include/public.hpp \
   /usr/include/muduo/base/Logging.h \
   /usr/include/muduo/base/LogStream.h
@@ -1358,8 +1360,6 @@ src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o: /home/huan/projects/
 
 /home/huan/projects/ChatServer/src/server/model/usermodel.cpp:
 
-/home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp:
-
 /home/huan/projects/ChatServer/src/server/model/offlinemessagemodel.cpp:
 
 /usr/include/mysql/mysql/psi/psi_base.h:
@@ -1381,6 +1381,8 @@ src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o: /home/huan/projects/
 /usr/include/muduo/base/Logging.h:
 
 /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream:
+
+/home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp:
 
 /home/huan/projects/ChatServer/include/server/model/user.hpp:
 
