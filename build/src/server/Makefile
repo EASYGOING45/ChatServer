@@ -250,6 +250,30 @@ model/friendmodel.cpp.s:
 	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/friendmodel.cpp.s
 .PHONY : model/friendmodel.cpp.s
 
+model/groupmodel.o: model/groupmodel.cpp.o
+.PHONY : model/groupmodel.o
+
+# target to build an object file
+model/groupmodel.cpp.o:
+	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/groupmodel.cpp.o
+.PHONY : model/groupmodel.cpp.o
+
+model/groupmodel.i: model/groupmodel.cpp.i
+.PHONY : model/groupmodel.i
+
+# target to preprocess a source file
+model/groupmodel.cpp.i:
+	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/groupmodel.cpp.i
+.PHONY : model/groupmodel.cpp.i
+
+model/groupmodel.s: model/groupmodel.cpp.s
+.PHONY : model/groupmodel.s
+
+# target to generate assembly for a file
+model/groupmodel.cpp.s:
+	cd /home/huan/projects/ChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/model/groupmodel.cpp.s
+.PHONY : model/groupmodel.cpp.s
+
 model/offlinemessagemodel.o: model/offlinemessagemodel.cpp.o
 .PHONY : model/offlinemessagemodel.o
 
@@ -322,6 +346,9 @@ help:
 	@echo "... model/friendmodel.o"
 	@echo "... model/friendmodel.i"
 	@echo "... model/friendmodel.s"
+	@echo "... model/groupmodel.o"
+	@echo "... model/groupmodel.i"
+	@echo "... model/groupmodel.s"
 	@echo "... model/offlinemessagemodel.o"
 	@echo "... model/offlinemessagemodel.i"
 	@echo "... model/offlinemessagemodel.s"

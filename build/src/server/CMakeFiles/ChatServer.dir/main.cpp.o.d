@@ -261,6 +261,9 @@ src/server/CMakeFiles/ChatServer.dir/main.cpp.o: \
  /home/huan/projects/ChatServer/include/server/model/user.hpp \
  /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
  /home/huan/projects/ChatServer/include/server/model/friendmodel.hpp \
+ /home/huan/projects/ChatServer/include/server/model/groupmodel.hpp \
+ /home/huan/projects/ChatServer/include/server/model/group.hpp \
+ /home/huan/projects/ChatServer/include/server/model/groupuser.hpp \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream \
  /usr/include/signal.h /usr/include/bits/signum.h \
  /usr/include/bits/siginfo.h /usr/include/bits/sigaction.h \

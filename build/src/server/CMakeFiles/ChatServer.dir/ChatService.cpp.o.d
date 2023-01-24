@@ -256,5 +256,8 @@ src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o: \
  /home/huan/projects/ChatServer/include/server/model/user.hpp \
  /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
  /home/huan/projects/ChatServer/include/server/model/friendmodel.hpp \
+ /home/huan/projects/ChatServer/include/server/model/groupmodel.hpp \
+ /home/huan/projects/ChatServer/include/server/model/group.hpp \
+ /home/huan/projects/ChatServer/include/server/model/groupuser.hpp \
  /home/huan/projects/ChatServer/include/public.hpp \
  /usr/include/muduo/base/Logging.h /usr/include/muduo/base/LogStream.h
