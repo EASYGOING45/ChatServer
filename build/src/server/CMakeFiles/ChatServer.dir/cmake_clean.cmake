@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ChatServer.dir/db/db.cpp.o.d"
   "CMakeFiles/ChatServer.dir/main.cpp.o"
   "CMakeFiles/ChatServer.dir/main.cpp.o.d"
+  "CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o"
+  "CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o.d"
   "CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o"
   "CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o.d"
   "CMakeFiles/ChatServer.dir/model/usermodel.cpp.o"

@@ -13,6 +13,7 @@ using namespace muduo::net;
 #include "json.hpp"
 #include "usermodel.hpp"
 #include "offlinemessagemodel.hpp"
+#include "friendmodel.hpp"
 using json = nlohmann::json;
 
 // 处理消息的事件回调方法类型
@@ -33,7 +34,10 @@ public:
     // 一对一聊天业务
     void oneChat(const TcpConnectionPtr &conn, json &js, Timestamp time);
 
-    //服务器异常 业务重置方法
+    // 添加好友业务
+    void addFriend(const TcpConnectionPtr &conn, json &js, Timestamp time);
+
+    // 服务器异常 业务重置方法
     void reset();
 
     // 获取消息对应的处理器
@@ -48,6 +52,7 @@ private:
     // 数据操作类对象
     UserModel _userModel;
     OfflineMsgModel _offlineMsgModel;
+    FriendModel _friendModel;
 
     // 存储消息id和其对应的业务处理方法
     unordered_map<int, MsgHandler> _msgHandlerMap;

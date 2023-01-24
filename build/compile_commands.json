@@ -21,6 +21,11 @@
 },
 {
   "directory": "/home/huan/projects/ChatServer/build/src/server",
+  "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/include/server/db -I/home/huan/projects/ChatServer/include/server/model -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o -c /home/huan/projects/ChatServer/src/server/model/friendmodel.cpp",
+  "file": "/home/huan/projects/ChatServer/src/server/model/friendmodel.cpp"
+},
+{
+  "directory": "/home/huan/projects/ChatServer/build/src/server",
   "command": "/usr/bin/g++  -I/home/huan/projects/ChatServer/include -I/home/huan/projects/ChatServer/include/server -I/home/huan/projects/ChatServer/include/server/db -I/home/huan/projects/ChatServer/include/server/model -I/home/huan/projects/ChatServer/thirdparty -g -g -o CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o -c /home/huan/projects/ChatServer/src/server/model/offlinemessagemodel.cpp",
   "file": "/home/huan/projects/ChatServer/src/server/model/offlinemessagemodel.cpp"
 },

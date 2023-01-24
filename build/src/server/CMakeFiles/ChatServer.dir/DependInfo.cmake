@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/huan/projects/ChatServer/src/server/ChatService.cpp" "src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/ChatService.cpp.o.d"
   "/home/huan/projects/ChatServer/src/server/db/db.cpp" "src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o.d"
   "/home/huan/projects/ChatServer/src/server/main.cpp" "src/server/CMakeFiles/ChatServer.dir/main.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/main.cpp.o.d"
+  "/home/huan/projects/ChatServer/src/server/model/friendmodel.cpp" "src/server/CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o.d"
   "/home/huan/projects/ChatServer/src/server/model/offlinemessagemodel.cpp" "src/server/CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o.d"
   "/home/huan/projects/ChatServer/src/server/model/usermodel.cpp" "src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o" "gcc" "src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o.d"
   )

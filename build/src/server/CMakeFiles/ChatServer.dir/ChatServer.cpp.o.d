@@ -260,4 +260,5 @@ src/server/CMakeFiles/ChatServer.dir/ChatServer.cpp.o: \
  /home/huan/projects/ChatServer/include/server/model/usermodel.hpp \
  /home/huan/projects/ChatServer/include/server/model/user.hpp \
  /home/huan/projects/ChatServer/include/server/model/offlinemessagemodel.hpp \
+ /home/huan/projects/ChatServer/include/server/model/friendmodel.hpp \
  /opt/rh/devtoolset-7/root/usr/include/c++/7/iostream
