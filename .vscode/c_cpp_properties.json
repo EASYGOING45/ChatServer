@@ -10,6 +10,7 @@
                 "${workspaceFolder}/include",
                 "${workspaceFolder}/include/server",
                 "${workspaceFolder}/include",
+                "${workspaceFolder}/include/server/model",
                 "${workspaceFolder}/include/server/model"
             ],
             "defines": [],
