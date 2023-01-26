@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "functional": "cpp"
+        "functional": "cpp",
+        "memory": "cpp",
+        "istream": "cpp"
     }
 }

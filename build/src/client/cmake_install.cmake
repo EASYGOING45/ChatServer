@@ -1,4 +1,4 @@
-# Install script for directory: /home/huan/projects/ChatServer/src
+# Install script for directory: /home/huan/projects/ChatServer/src/client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,12 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/huan/projects/ChatServer/build/src/server/cmake_install.cmake")
-  include("/home/huan/projects/ChatServer/build/src/client/cmake_install.cmake")
-
 endif()
 

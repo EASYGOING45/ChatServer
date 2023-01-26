@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
   "/home/huan/projects/ChatServer/src/CMakeLists.txt"
+  "/home/huan/projects/ChatServer/src/client/CMakeLists.txt"
   "/home/huan/projects/ChatServer/src/server/CMakeLists.txt"
   "/usr/local/share/cmake-3.25/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.25/Modules/CMakeCXXInformation.cmake"
@@ -43,9 +44,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/client/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/server/CMakeFiles/ChatServer.dir/DependInfo.cmake"
+  "src/client/CMakeFiles/ChatClient.dir/DependInfo.cmake"
   )

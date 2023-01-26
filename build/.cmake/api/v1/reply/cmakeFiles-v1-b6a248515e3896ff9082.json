@@ -126,6 +126,9 @@
 		},
 		{
 			"path" : "src/server/CMakeLists.txt"
+		},
+		{
+			"path" : "src/client/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
