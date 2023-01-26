@@ -99,5 +99,91 @@ int main(int argc, char **argv)
     readTask.detach();                               // 分离 pthread_detach
 
     // main线程
+    // main用于接收用户输入 负责发送数据
+    for (;;)
+    {
+        // 显示首页面菜单 登录、注册、退出等操作
+        cout << "========================" << endl;
+        cout << "1. login" << endl;
+        cout << "2. register" << endl;
+        cout << "3. quit" << endl;
+        cout << "========================" << endl;
+        cout << "Your Choice:";
+        int choice = 0;
+        cin >> choice; // 注意 需要清楚回车
+        cin.get();     // 处理掉缓冲区残留的回车
+
+        switch (choice)
+        {
+        case 1:
+        {
+            // login业务
+            int id = 0;
+            char pwd[50] = {0};
+            cout << "userid:";
+            cin >> id;
+            cin.get(); // 处理回车
+            cout << "user's password:";
+            cin.getline(pwd, 50); // 使用getline读取
+
+            // 序列化 封装json
+            json js;
+            js["msgid"] = LOGIN_MSG;
+            js["id"] = id;
+            js["password"] = pwd;
+            string request = js.dump();
+
+            g_isLoginSuccess = false;
+
+            int len = send(clientfd, request.c_str(), strlen(request.c_str()) + 1, 0);
+            if (len == -1)
+            {
+                cerr << "Send Login Msg Error:" << request << endl;
+            }
+
+            sem_wait(&rwsem); // 等待信号量由子线程处理完登录的响应消息后 通知这里 继续
+
+            if (g_isLoginSuccess)
+            {
+                // 进入聊天主菜单页面
+                isMainMenuRunning = true;
+                mainMenu(clientfd);
+            }
+        }
+        break;
+        case 2:
+        {
+            // register业务
+            char name[50] = {0};
+            char pwd[50] = {0};
+            cout << "username:";
+            cin.getline(name, 50);
+            cout << "user's password:";
+            cin.getline(pwd, 50);
+
+            // 序列化 封装json
+            json js;
+            js["msgid"] = REG_MSG;
+            js["name"] = name;
+            js["password"] = pwd;
+            string request = js.dump();
+
+            int len = send(clientfd, request.c_str(), strlen(request.c_str()) + 1, 0);
+            if (len == -1)
+            {
+                cerr << "Send Reg Msg Error:" << request << endl;
+            }
+            sem_wait(&rwsem); // 等待信号量，子线程处理完注册消息会通知
+        }
+        break;
+        case 3: // quit业务
+            close(clientfd);
+            sem_destroy(&rwsem); // 销毁信号量
+            exit(0);
+        default:
+            cerr << "Invalid Input,Try Again";
+            break;
+        }
+    }
     return 0;
 }
