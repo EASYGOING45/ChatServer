@@ -341,3 +341,55 @@ void readTaskHandler(int clientfd)
         }
     }
 }
+
+// 显示当前登录成功的用户的基本信息
+void showCurrentUserData()
+{
+    cout << "======================login user======================" << endl;
+
+    cout << "current login user => id:" << g_currentUser.getId() << " name:" << g_currentUser.getName() << endl;
+
+    // 好友列表
+    cout << "----------------------friend list---------------------" << endl;
+    if (!g_currentUserFriendList.empty())
+    {
+        for (User &user : g_currentUserFriendList)
+        {
+            cout << user.getId() << " " << user.getName() << " " << user.getState() << endl;
+        }
+    }
+
+    // 群组列表
+    cout << "----------------------group list----------------------" << endl;
+    if (!g_currentUserGroupList.empty())
+    {
+        for (Group &group : g_currentUserGroupList)
+        {
+            cout << group.getId() << " " << group.getName() << " " << group.getDesc() << endl;
+            for (GroupUser &user : group.getUsers())
+            {
+                cout << user.getId() << " " << user.getName() << " " << user.getState()
+                     << " " << user.getRole() << endl;
+            }
+        }
+    }
+    cout << "======================================================" << endl;
+}
+
+// 命令句柄
+// help命令
+void help(int fd = 0, string str = "");
+// "chat" command handler
+void chat(int, string);
+// "addfriend" command handler
+void addfriend(int, string);
+// "creategroup" command handler
+void creategroup(int, string);
+// "addgroup" command handler
+void addgroup(int, string);
+// "groupchat" command handler
+void groupchat(int, string);
+// "loginout" command handler
+void loginout(int, string);
+
+// 系统所支持的客户端命令列表
