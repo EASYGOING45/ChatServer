@@ -10,6 +10,7 @@ using namespace std;
 using namespace muduo;
 using namespace muduo::net;
 
+#include "redis.hpp"
 #include "json.hpp"
 #include "usermodel.hpp"
 #include "offlinemessagemodel.hpp"
@@ -59,6 +60,9 @@ public:
     // 处理客户端异常退出
     void clientCloseException(const TcpConnectionPtr &conn);
 
+    // 从redis消息队列中获取订阅的消息
+    void handleRedisSubscribeMessage(int, string);
+
 private:
     ChatService(); // 构造函数 放在私有中
 
@@ -76,5 +80,8 @@ private:
 
     // 定义互斥锁 保证_userConnMap的线程安全
     mutex _connMutex;
+
+    // Redis操作对象
+    Redis _redis;
 };
 #endif

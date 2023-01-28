@@ -3,6 +3,7 @@
         "functional": "cpp",
         "memory": "cpp",
         "istream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "thread": "cpp"
     }
 }
